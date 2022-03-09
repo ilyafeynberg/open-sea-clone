@@ -66,8 +66,7 @@ const Collection = () => {
         if (!provider) return
 
         const sdk = new ThirdwebSDK(
-            provider.getSigner(),
-            'https://eth-mainnet.alchemyapi.io/v2/_wJhHrLXmh3yOjcRScwlww0A7iwadQbw'
+            provider.getSigner()
         )
         return sdk.getMarketplaceModule(
             '0xEF072c59D8b760C9Fc61DC958bF4151629a4AAfB'
